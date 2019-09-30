@@ -23,6 +23,7 @@ public class NettyServer {
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         //启动服务的启动类（辅助类）
         ServerBootstrap bootstrap = new ServerBootstrap();
+        //添加主线程组和worker线程组
         bootstrap.group(bossGroup,workerGroup);
 
 
