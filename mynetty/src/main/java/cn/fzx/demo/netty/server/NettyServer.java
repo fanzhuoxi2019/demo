@@ -25,8 +25,6 @@ public class NettyServer {
         ServerBootstrap bootstrap = new ServerBootstrap();
         //添加主线程组和worker线程组
         bootstrap.group(bossGroup,workerGroup);
-
-
     }
 
 
